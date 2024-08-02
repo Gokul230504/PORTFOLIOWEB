@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokul Raj L - Electronics and Communication Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --secondary-color: #50E3C2;
+            --accent-color: #F5A623;
+            --bg-color: #1C1C1E;
+            --text-color: #FFFFFF;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            opacity: 0.8;
+        }
+        nav {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-bottom: 2rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        .section {
+            margin-bottom: 4rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .card h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+        }
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .skill-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .model-3d {
+            width: 200px;
+            height: 200px;
+            margin: 2rem auto;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 20s infinite linear;
+        }
+        .face {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid var(--accent-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            opacity: 0.8;
+        }
+        .front { transform: translateZ(100px); }
+        .back { transform: translateZ(-100px) rotateY(180deg); }
+        .right { transform: translateX(100px) rotateY(90deg); }
+        .left { transform: translateX(-100px) rotateY(-90deg); }
+        .top { transform: translateY(-100px) rotateX(90deg); }
+        .bottom { transform: translateY(100px) rotateX(-90deg); }
+        @keyframes rotate {
+            0% { transform: rotateX(0) rotateY(0); }
+            100% { transform: rotateX(360deg) rotateY(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Gokul Raj L</h1>
+            <p class="subtitle">Electronics and Communication Engineer</p>
+        </header>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I'm a passionate Electronics and Communication Engineering student with a keen interest in antenna design, EM sensor design, and electromagnetics. My goal is to innovate and create solutions that make a difference in people's lives.</p>
+            <div class="model-3d">
+                <div class="face front">ECE</div>
+                <div class="face back">IoT</div>
+                <div class="face right">RF</div>
+                <div class="face left">EM</div>
+                <div class="face top">AI</div>
+                <div class="face bottom">ML</div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <div class="card">
+                <h3>Intern at Attox Research Laboratory</h3>
+                <p>Sep. 2023 – Feb. 2024</p>
+                <ul>
+                    <li>Developed a prototype system for non-invasive mineral content detection in animals through external fluid analysis.</li>
+                    <li>Implemented Python algorithms and machine learning techniques for accurate sample analysis and mineral content assessment.</li>
+                    <li>Designed data collection protocols and documented the prototype's functionality, testing procedures, and potential applications.</li>
+                    <li>Optimized the prototype's user interface for field use and assisted in the overall development process.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Glucose Monitoring Through Breath</h3>
+                    <p>Developed a non-invasive glucose monitoring system using breath analysis and machine learning.</p>
+                    <div class="skill-list">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Machine Learning</span>
+                        <span class="skill-item">Sensor Technology</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Skin Patchable Electromagnetic Biosensor</h3>
+                    <p>Designed a wearable, non-invasive biosensor patch for continuous blood glucose monitoring using electromagnetic waves.</p>
+                    <div class="skill-list">
+                        <span class="skill-item">Electronics</span>
+                        <span class="skill-item">Signal Processing</span>
+                        <span class="skill-item">Biomedical Engineering</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Low-Cost Hearing Aid Using IC741</h3>
+                    <p>Engineered an affordable hearing aid solution utilizing the IC741 operational amplifier as the core component.</p>
+                    <div class="skill-list">
+                        <span class="skill-item">Analog Electronics</span>
+                        <span class="skill-item">Audio Processing</span>
+                        <span class="skill-item">PCB Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">C</span>
+                        <span class="skill-item">Python</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Design Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">ANSYS HFSS</span>
+                        <span class="skill-item">PROTEUS</span>
+                        <span class="skill-item">MATLAB</span>
+                        <span class="skill-item">LABVIEW</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Areas of Interest</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Antenna Design</span>
+                        <span class="skill-item">EM Sensor Design</span>
+                        <span class="skill-item">Electromagnetics</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>Kongu Engineering College</h3>
+                <p>Bachelor of Engineering in Electronics and Communication Engineering</p>
+                <p>CGPA: 8.80</p>
+                <p>Sep. 2021 – May 2025</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <div class="card">
+                <p>Email: gokulraj230504@gmail.com</p>
+                <p>Phone: 6381078919</p>
+                <p>Location: Arcot, Tamil Nadu, India</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/gokul-raj-l-21a4081ab/" target="_blank">gokul-raj-l-21a4081ab</a></p>
+                <p>GitHub: <a href="https://github.com/Gokul230504" target="_blank">Gokul230504</a></p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Add smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
